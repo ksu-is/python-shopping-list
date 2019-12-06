@@ -1,5 +1,11 @@
+print("Welcome to CameronShoppinglist.py")
 shopping_list = []
+add= input("Want to add something to your shopping list? Y or N")
 
+while add.lower() == lower "sure":
+    item = input("enter your new item to the list:")
+    shopping_list.append(item)
+    add = input("Want to add to your shopping list? Y or N")
 def remove_item(idx):
     index = idx -1
     item = shopping_list.pop(index)
