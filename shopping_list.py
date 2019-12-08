@@ -1,3 +1,24 @@
+def mainScreen():
+    os.system('cls')
+    print("######################")
+    print("     SHOPPING LIST     ")
+    print("#######################")
+
+def addScreen():
+    os.system('cls')
+    print("######################")
+    print("    ADDING LIST SCREEN  ")
+    print("#######################")
+
+def viewScreen():
+    os.system('cls')
+    print("######################")
+    print("     VIEW LIST SCREEN    ")
+    print("#######################")
+def deleteScreen():
+    os.system('cls')
+    print("######################")
+    print("     DELETE SCREEN LIST  ")
 print("Welcome to CameronShoppinglist.py")
 shopping_list = []
 add= input("Want to add something to your shopping list? Y or N")
