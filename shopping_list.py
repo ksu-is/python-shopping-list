@@ -89,11 +89,3 @@ addScreen()
 time.sleep(1)
 viewScreen()
 time.sleep(1)
-
-
-print("Here is your shopping list in aplphabetical order")
-shopping_list.sort()
-for listitem in shopping_list:
-    print(listitem)
-
-
