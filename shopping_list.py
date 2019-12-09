@@ -10,6 +10,19 @@ def mainScreen():
     print("(v)iew from the list")
     print("(q)uit the program")
     choice = input("choice: ")
+    if len(choice) > 0:
+        if choice.lower().startswith("a"):
+            addScreen()
+        elif choice.lower().startswith("d"):
+            deleteScreen()
+        elif choice.lower().startswith("v"):
+            viewScreen()
+        elif choice.lower().startswith("q"):
+            sys.exit()
+        else:
+            mainScreen()
+    else:
+        mainScreen()
 
 def addScreen():
     os.system('cls')
