@@ -29,6 +29,18 @@ def addScreen():
     print("######################")
     print("    ADDING LIST SCREEN  ")
     print("#######################")
+    print("\n\n")
+    print("Please enter the name of the item you wnat to add.")
+    print( "Press ENTER to return to the main menu.\n")
+    item = input("\nItem: ")
+    if len(item) > 0:
+        shop.append(item)
+        print("item has been locked in GLEE :)")
+        time.sleep(1)
+        addScreen()
+    else:
+        mainScreen()
+
     
 
 def viewScreen():
