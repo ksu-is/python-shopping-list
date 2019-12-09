@@ -48,6 +48,15 @@ def viewScreen():
     print("######################")
     print("     VIEW LIST SCREEN    ")
     print("#######################")
+    print("\n\n")
+    for item in shop:
+        print(item)
+    
+    print("\n\n")
+    print(" press ENTER to return to main menu.\n")
+    input()
+    mainScreen()
+
 def deleteScreen():
     os.system('cls')
     print("######################")
