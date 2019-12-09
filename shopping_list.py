@@ -61,6 +61,28 @@ def deleteScreen():
     os.system('cls')
     print("######################")
     print("     DELETE SCREEN LIST  ")
+    global shop
+    os.system('cls')
+    print("######################")
+    print("     DELETE SCREEN LIST  ")
+    print("#######################")
+    count = 0
+    for item in shop:
+        print(count, "-", item)
+        count = count + 1
+    print("What number do you want to delete?")
+    choice = input("number:  ")
+    if len(choice) > 0:
+        try:
+            del shop[int(choice)]
+            print("item deleted... sad to see it go so soon.")
+            time.sleep(1)
+        except:
+            print("invalid option for deletion.")
+            time.sleep(1)
+        deleteScreen()
+    else:
+        mainScreen()
 print("Welcome to CameronShoppinglist.py")
 shopping_list = []
 add= input("Want to add something to your shopping list? Y or N")
