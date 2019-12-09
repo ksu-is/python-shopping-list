@@ -3,12 +3,20 @@ def mainScreen():
     print("######################")
     print("     SHOPPING LIST     ")
     print("#######################")
+    print("Your list contains",len(shop),"items.")
+    print("Please choose from the following options:")
+    print("(a)dd to the list")
+    print("(d)elete from the list")
+    print("(v)iew from the list")
+    print("(q)uit the program")
+    choice = input("choice: ")
 
 def addScreen():
     os.system('cls')
     print("######################")
     print("    ADDING LIST SCREEN  ")
     print("#######################")
+    
 
 def viewScreen():
     os.system('cls')
