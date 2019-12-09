@@ -83,15 +83,14 @@ def deleteScreen():
         deleteScreen()
     else:
         mainScreen()
-print("Welcome to CameronShoppinglist.py")
-shopping_list = []
-add= input("Want to add something to your shopping list? Y or N")
+mainScreen()
+time.sleep(1)
+addScreen()
+time.sleep(1)
+viewScreen()
+time.sleep(1)
 
-while add.lower() == lower "sure":
-    item = input("enter your new item to the list:")
-    shopping_list.append(item)
-    add = input("Want to add to your shopping list? Y or N")
-print()
+
 print("Here is your shopping list in aplphabetical order")
 shopping_list.sort()
 for listitem in shopping_list:
